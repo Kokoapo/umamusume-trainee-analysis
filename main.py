@@ -6,8 +6,6 @@ import kagglehub
 path = kagglehub.dataset_download("kokoapo/umamusume-trainees")
 df = pd.read_csv(path + "/data.csv")
 
-st.write(df.head())
-
 #############################
 #############################
 #############################
@@ -65,7 +63,7 @@ with right_column:
     st.write(f"{round(freq_days_en)} days")
 
 freq_diff_target = count_jp_release/(1/freq_days_en - 1/freq_days_jp)
-st.write(f"I will take approximately {round(freq_diff_target)} days so EN Server reaches JP Server")
+st.write(f"It will take approximately {round(freq_diff_target)} days so EN Server reaches JP Server")
 
 #############################
 #############################
